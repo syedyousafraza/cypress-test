@@ -6,7 +6,6 @@ describe("login via Environment Variables", () => {
 
         cy.get('input[name="user-name"]').type(Cypress.env('username'));  //Get the values of env variable from cypress.config.js file
         cy.get('input[name="password"]').type(Cypress.env('password'));
-
     })
 
 })
