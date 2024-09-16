@@ -14,7 +14,12 @@ module.exports = defineConfig({
     pageLoadTimeout: 30000,
     chromeWebSecurity: false,
     video: false, // Enable video recording (default is true in CI environments)
-    screenshotOnRunFailure: true
+    screenshotOnRunFailure: true,
+
+    env: {
+      username: 'testuser',
+      password: 'testpassword',
+    },
 
 
 
